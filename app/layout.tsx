@@ -2,19 +2,20 @@ import type { Metadata } from "next";
 import { Inter, IBM_Plex_Serif } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const inter = Inter({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
 const ibmPlexSerif = IBM_Plex_Serif({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
   weight: ["400", "700"],
-  variable: "--font-ibm-plex-serif",
 });
 
 export const metadata: Metadata = {
   title: "City Bank",
-  description: "City Bank is a modern banking solution for everyone.",
-  icons: {
-    icon: "/ions/logo.svg",
-  }
+  description: "City Bank - Banking made easy",
 };
 
 export default function RootLayout({

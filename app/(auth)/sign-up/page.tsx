@@ -1,10 +1,9 @@
-
 import React from 'react'
 
 const SignUp = () => {
   return (
     <div>
-      SIGNUP
+      Signup
     </div>
   )
 }
